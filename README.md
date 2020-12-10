@@ -14,7 +14,7 @@ Then, activate the envionment by running:
 
 ## Reproducing our Results:
 
-For Cifar10 results, navigate to CIFAR10 directory by running `cd CIFAR10` and run the corresponding main file with the hyperparameters mentioned in the paper. For ImageNet results, the pretrained weights shall be downloaded from the original repo of the paper. Also, modify `all_datasets.py` for the path where ImageNet is saved.
+For Cifar10 results, navigate to CIFAR10 directory by running `cd CIFAR10` and run the corresponding main file with the hyperparameters mentioned in the paper. For ImageNet results, the pretrained weights shall be downloaded from the original repo of the corresponding paper. Also, modify `all_datasets.py` for the path where ImageNet is saved.
 
 ## Using Data-Dependent Smoothing For other Frameworks:
 
