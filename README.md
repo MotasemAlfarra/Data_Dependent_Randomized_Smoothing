@@ -23,3 +23,7 @@ The file `OptimzeSigma.py` contains the main function the optimizes for the sigm
 ## Certifying the model with data dependent smoothing.
 
 To Certify a model with data dependent randomized smoothing, we use the repo https://github.com/locuslab/smoothing where we replace `certify.py` with `certify_ds.py`. 
+
+## Wanna Use DS in a New RS Training framework ?
+
+No problem, all what you need is to use the code in `optimze_sigma.py` within the training fromwork. Upon training, run `optimze_sigma.py` for the samples in the test set with propper setting of the hyperparameters. Certify the final model with the output parameters gotten from the previous step.
