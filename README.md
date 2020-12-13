@@ -1,4 +1,4 @@
-# Data_Dependent_Randomized_Smoothing
+# Data Dependent Randomized Smoothing
 This is the official repo for the work "Data Dependent Randomized Smoothing"
 
 Preprint: https://arxiv.org/pdf/2012.04351.pdf
