@@ -15,9 +15,9 @@ def OptimzeSigma(model, batch, alpha, sig_0, K, n):
     new_shape = [batch_size * n]
     new_shape.extend(batch[0].shape)
     new_batch = batch.repeat((1,n, 1, 1)).view(new_shape)
-    sigma_repeated = sig.repeat((1, n, 1, 1)).view(-1,1,1,1)
 
     for _ in range(K):
+        sigma_repeated = sig.repeat((1, n, 1, 1)).view(-1,1,1,1)
         eps = torch.randn_like(new_batch)*sigma_repeated #Reparamitrization trick
         out = model(new_batch + eps).reshape(batch_size, n, 10).mean(1)#This is \psi in the algorithm
         
