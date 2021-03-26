@@ -106,10 +106,9 @@ def get_sigma(model, batch, lr_sig, sig_0, iters, device='cuda:0', ret_radius = 
     new_shape = [batch_size * gaussian_num]
     new_shape.extend(batch[0].shape)
     new_batch = batch.repeat((1,gaussian_num, 1, 1)).view(new_shape)
-    sigma_repeated = sig.repeat((1, gaussian_num, 1, 1)).view(-1,1,1,1)
 
     for _ in range(iters):
-      
+        sigma_repeated = sig.repeat((1, gaussian_num, 1, 1)).view(-1,1,1,1)
         eps = torch.randn_like(new_batch)*sigma_repeated
         out = model(new_batch + eps).reshape(batch_size, gaussian_num, 10).mean(1)
         
