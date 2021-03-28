@@ -26,10 +26,17 @@ No problem, all what you need is to use the code in `optimze_sigma.py` within th
 
 
 @misc{alfarra2020data,
+
       title={Data Dependent Randomized Smoothing}, 
+      
       author={Motasem Alfarra and Adel Bibi and Philip H. S. Torr and Bernard Ghanem},
+      
       year={2020},
+      
       eprint={2012.04351},
+      
       archivePrefix={arXiv},
+      
       primaryClass={cs.LG} 
+      
 }
