@@ -25,18 +25,11 @@ To Certify a model with data dependent randomized smoothing, we use the repo htt
 No problem, all what you need is to use the code in `optimze_sigma.py` within the training fromwork. Upon training, run `optimze_sigma.py` for the samples in the test set with propper setting of the hyperparameters. Certify the final model with the output parameters gotten from the previous step.
 
 
-`@misc{alfarra2020data,
-
+@misc{alfarra2020data,
       title={Data Dependent Randomized Smoothing}, 
-      
       author={Motasem Alfarra and Adel Bibi and Philip H. S. Torr and Bernard Ghanem},
-      
       year={2020},
-      
       eprint={2012.04351},
-      
       archivePrefix={arXiv},
-      
-      primaryClass={cs.LG}
-      
-}`
+      primaryClass={cs.LG} 
+}
