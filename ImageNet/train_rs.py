@@ -159,7 +159,7 @@ def train(epoch, model, train_loader, optimizer, writer,
         
         total_loss = compute_loss(outputs_softmax, targets)
         if torch.isnan(outputs_softmax).any() or torch.isnan(total_loss).any():
-            print('Fuck')
+            print('NaN flag')
         # total_loss += lamda*macer_loss(outputs_softmax, targets, sigma, gamma) 
         # clean_loss = compute_loss(clean_output, targets)
         # total_loss += clean_loss
