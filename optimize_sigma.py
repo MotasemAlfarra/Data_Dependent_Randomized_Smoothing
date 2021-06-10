@@ -19,7 +19,7 @@ def OptimzeSigma(model, batch, alpha, sig_0, K, n):
     for _ in range(K):
         sigma_repeated = sig.repeat((1, n, 1, 1)).view(-1,1,1,1)
         eps = torch.randn_like(new_batch)*sigma_repeated #Reparamitrization trick
-        out = model(new_batch + eps).reshape(batch_size, n, 10).mean(1)#This is \psi in the algorithm
+        out = model(new_batch + eps).reshape(batch_size, n, -1).mean(1)#This is \psi in the algorithm
         
         vals, _ = torch.topk(out, 2)
         vals.transpose_(0, 1)
