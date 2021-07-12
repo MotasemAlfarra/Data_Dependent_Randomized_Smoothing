@@ -31,28 +31,43 @@ No problem, all what you need is to use the code in `optimze_sigma.py` within th
 Then import the opimization class `OptimizeIsotropicSmoothingParameters` from our package in your python code. This class takes a PyTorch model, a DataLoader and a device. 
 
 `def __init__(
+
             self, model: torch.nn.Module,
+            
             test_loader: torch.utils.data.DataLoader, device: str = "cuda:0",
+            
     ):
 `
+
 Next, you need to define the `Certificate` class (either `L2Certificate` or `L1Certificate` depending on the norm of interest). You need to pass the batch size to this class.
 
 `def __init__(self, batch_size: int, device: str = "cuda:0"):`
 
 Finally, you can run the optimization by calling the `run_optimization` method from the `OptimizeIsotropicSmoothingParameters` class.
+
 `def run_optimization(
+
             self, certificate: Certificate, lr: float,
+            
             theta_0: torch.Tensor, iterations: int,
+            
             num_samples: int, filename: str = './'
-    ): `
- where:  
-  `certificate (Certificate): instance of desired certification object
-  lr (float, optional): optimization learning rate for Isotropic DDS
-  theta_0 (torch.Tensor): initialization value per input of the test
-      loader
-  iterations (int): Description
-  num_samples (int): number of samples per input and iteration
-  filename (str, optional): name of the file of the saved thetas`
-   
-      
+            ):`
+`
+where:
+
+`
+certificate (Certificate): instance of desired certification object.
+
+lr (float, optional): optimization learning rate for Isotropic DDS.
+
+theta_0 (torch.Tensor): initialization value per input of the testloader.
+
+iterations (int): Number of iterations for the optimization.
+
+num_samples (int): number of samples per input and iteration.
+
+filename (str, optional): name of the file of the saved thetas.
+`
+
 For further details, please check the examples in `ddsmoothing/scripts`.
