@@ -31,13 +31,13 @@ No problem, all what you need is to use the code in `optimze_sigma.py` within th
 Then import the opimization class `OptimizeIsotropicSmoothingParameters` from our package in your python code. This class takes a PyTorch model, a DataLoader and a device. 
 
 `
-def __init__(
+            def __init__(
 
-            self, model: torch.nn.Module,
+                        self, model: torch.nn.Module,
+
+                        test_loader: torch.utils.data.DataLoader, device: str = "cuda:0",
             
-            test_loader: torch.utils.data.DataLoader, device: str = "cuda:0",
-            
-    ):
+            ):
 `
 
 Next, you need to define the `Certificate` class (either `L2Certificate` or `L1Certificate` depending on the norm of interest). You need to pass the batch size to this class.
@@ -46,14 +46,14 @@ Next, you need to define the `Certificate` class (either `L2Certificate` or `L1C
 
 Finally, you can run the optimization by calling the `run_optimization` method from the `OptimizeIsotropicSmoothingParameters` class.
 
-`def run_optimization(
+`           def run_optimization(
 
-            self, certificate: Certificate, lr: float,
-            
-            theta_0: torch.Tensor, iterations: int,
-            
-            num_samples: int, filename: str = './'
-            ):`
+                        self, certificate: Certificate, lr: float,
+
+                        theta_0: torch.Tensor, iterations: int,
+
+                        num_samples: int, filename: str = './'
+                        ):
 `
 where:
 
