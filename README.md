@@ -39,18 +39,11 @@ Next, you need to define the `Certificate` class (either `L2Certificate` or `L1C
 
 Finally, you can run the optimization by calling the `run_optimization` method from the `OptimizeIsotropicSmoothingParameters` class.
 
-`           def run_optimization(
+`def run_optimization(self, certificate: Certificate, lr: float, theta_0: torch.Tensor, iterations: int, num_samples: int, filename: str = './'):`
 
-                        self, certificate: Certificate, lr: float,
-
-                        theta_0: torch.Tensor, iterations: int,
-
-                        num_samples: int, filename: str = './'
-                        ):
-`
 where:
 
-`
+
 certificate (Certificate): instance of desired certification object.
 
 lr (float, optional): optimization learning rate for Isotropic DDS.
@@ -62,6 +55,6 @@ iterations (int): Number of iterations for the optimization.
 num_samples (int): number of samples per input and iteration.
 
 filename (str, optional): name of the file of the saved thetas.
-`
+
 
 For further details, please check the examples in `ddsmoothing/scripts`.
