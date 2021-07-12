@@ -57,4 +57,22 @@ num_samples (int): number of samples per input and iteration.
 filename (str, optional): name of the file of the saved thetas.
 
 
-For further details, please check the examples in `ddsmoothing/scripts`.
+For further details, please check the examples in `ddsmoothing/scripts`. If you use this repo, please cite us:
+```
+@article{DBLP:journals/corr/abs-2012-04351,
+  author    = {Motasem Alfarra and
+               Adel Bibi and
+               Philip H. S. Torr and
+               Bernard Ghanem},
+  title     = {Data Dependent Randomized Smoothing},
+  journal   = {CoRR},
+  volume    = {abs/2012.04351},
+  year      = {2020},
+  url       = {https://arxiv.org/abs/2012.04351},
+  archivePrefix = {arXiv},
+  eprint    = {2012.04351},
+  timestamp = {Wed, 09 Dec 2020 15:29:05 +0100},
+  biburl    = {https://dblp.org/rec/journals/corr/abs-2012-04351.bib},
+  bibsource = {dblp computer science bibliography, https://dblp.org}
+}
+```
