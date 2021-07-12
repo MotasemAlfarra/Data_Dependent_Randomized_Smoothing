@@ -28,6 +28,10 @@ No problem, all what you need is to use the code in `optimze_sigma.py` within th
 
 `pip install ddsmoothing-python`
 
+Next, import the package in your python code by running"
+
+`import ddsmoothing`
+
 Then import the opimization class `OptimizeIsotropicSmoothingParameters` from our package in your python code. This class takes a PyTorch model, a DataLoader and a device. 
 
 `def __init__(self, model: torch.nn.Module, test_loader: torch.utils.data.DataLoader, device: str = "cuda:0"):`
