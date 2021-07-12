@@ -30,7 +30,8 @@ No problem, all what you need is to use the code in `optimze_sigma.py` within th
 
 Then import the opimization class `OptimizeIsotropicSmoothingParameters` from our package in your python code. This class takes a PyTorch model, a DataLoader and a device. 
 
-`def __init__(
+`
+def __init__(
 
             self, model: torch.nn.Module,
             
