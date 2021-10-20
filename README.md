@@ -61,7 +61,11 @@ num_samples (int): number of samples per input and iteration.
 filename (str, optional): name of the file of the saved thetas.
 
 
-For further details, please check the examples in `ddsmoothing/scripts`. If you use this repo, please cite us:
+For further details, please check the examples in `ddsmoothing/scripts`.
+
+## Citation
+
+If you use this repo, please cite us:
 ```
 @article{DBLP:journals/corr/abs-2012-04351,
   author    = {Motasem Alfarra and
