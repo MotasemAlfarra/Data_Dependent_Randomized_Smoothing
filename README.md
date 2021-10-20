@@ -80,3 +80,5 @@ For further details, please check the examples in `ddsmoothing/scripts`. If you 
   bibsource = {dblp computer science bibliography, https://dblp.org}
 }
 ```
+
+This repository is licensed under the terms of the MIT license.
