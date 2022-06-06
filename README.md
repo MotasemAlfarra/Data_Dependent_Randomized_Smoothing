@@ -1,6 +1,8 @@
 # Data Dependent Randomized Smoothing
 This is the official repo for the work "Data Dependent Randomized Smoothing"
 
+This work was accepted to the 38th Conference on Uncertainity in AI (UAI 2022)
+
 Preprint: https://arxiv.org/pdf/2012.04351.pdf
 
 ![plot](./pull.png)
@@ -67,22 +69,17 @@ For further details, please check the examples in `ddsmoothing/scripts`.
 
 If you use this repo, please cite us:
 ```
-@article{DBLP:journals/corr/abs-2012-04351,
-  author    = {Motasem Alfarra and
-               Adel Bibi and
-               Philip H. S. Torr and
-               Bernard Ghanem},
-  title     = {Data Dependent Randomized Smoothing},
-  journal   = {CoRR},
-  volume    = {abs/2012.04351},
-  year      = {2020},
-  url       = {https://arxiv.org/abs/2012.04351},
-  archivePrefix = {arXiv},
-  eprint    = {2012.04351},
-  timestamp = {Wed, 09 Dec 2020 15:29:05 +0100},
-  biburl    = {https://dblp.org/rec/journals/corr/abs-2012-04351.bib},
-  bibsource = {dblp computer science bibliography, https://dblp.org}
+@misc{https://doi.org/10.48550/arxiv.2012.04351,
+  doi = {10.48550/ARXIV.2012.04351},
+  url = {https://arxiv.org/abs/2012.04351},
+  author = {Alfarra, Motasem and Bibi, Adel and Torr, Philip H. S. and Ghanem, Bernard},
+  keywords = {Machine Learning (cs.LG), FOS: Computer and information sciences, FOS: Computer and information sciences},
+  title = {Data Dependent Randomized Smoothing},
+  publisher = {arXiv},
+  year = {2020},
+  copyright = {arXiv.org perpetual, non-exclusive license}
 }
+
 ```
 
 This repository is licensed under the terms of the MIT license.
