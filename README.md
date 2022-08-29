@@ -3,7 +3,7 @@ This is the official repo for the work "Data Dependent Randomized Smoothing"
 
 This work was accepted to the 38th Conference on Uncertainity in AI (UAI 2022)
 
-Preprint: https://arxiv.org/pdf/2012.04351.pdf
+Paper: https://proceedings.mlr.press/v180/alfarra22a.html
 
 ![plot](./pull.png)
 
@@ -69,17 +69,20 @@ For further details, please check the examples in `ddsmoothing/scripts`.
 
 If you use this repo, please cite us:
 ```
-@misc{https://doi.org/10.48550/arxiv.2012.04351,
-  doi = {10.48550/ARXIV.2012.04351},
-  url = {https://arxiv.org/abs/2012.04351},
-  author = {Alfarra, Motasem and Bibi, Adel and Torr, Philip H. S. and Ghanem, Bernard},
-  keywords = {Machine Learning (cs.LG), FOS: Computer and information sciences, FOS: Computer and information sciences},
-  title = {Data Dependent Randomized Smoothing},
-  publisher = {arXiv},
-  year = {2020},
-  copyright = {arXiv.org perpetual, non-exclusive license}
+@InProceedings{pmlr-v180-alfarra22a,
+  title = 	 {Data dependent randomized smoothing},
+  author =       {Alfarra, Motasem and Bibi, Adel and Torr, Philip H. S. and Ghanem, Bernard},
+  booktitle = 	 {Proceedings of the Thirty-Eighth Conference on Uncertainty in Artificial Intelligence},
+  pages = 	 {64--74},
+  year = 	 {2022},
+  editor = 	 {Cussens, James and Zhang, Kun},
+  volume = 	 {180},
+  series = 	 {Proceedings of Machine Learning Research},
+  month = 	 {01--05 Aug},
+  publisher =    {PMLR},
+  pdf = 	 {https://proceedings.mlr.press/v180/alfarra22a/alfarra22a.pdf},
+  url = 	 {https://proceedings.mlr.press/v180/alfarra22a.html}
 }
-
 ```
 
 This repository is licensed under the terms of the MIT license.
